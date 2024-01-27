@@ -1,0 +1,27 @@
+#container {
+    text-align: center;
+}
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px; /* Add gap between images for better spacing */
+    margin-top: 10%;
+}
+
+.gallery-item {
+    background-color: rgba(0, 255, 255, 0.2);
+    text-align: center;
+    border: 10px solid rgba(0, 255, 255, 0.8); /* Border style for each gallery item */
+    padding: 10px; /* Add padding for better spacing within the border */
+    font-size: 30px;
+}
+
+h1, h3, figcaption {
+    color: rgba(0, 0, 255, 0.8); /* Color for caption*/
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+}
