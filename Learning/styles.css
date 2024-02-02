@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Landing Page */
+.landing-page {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+}
+
+.landing-page img {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.caption {
+    font-size: 24px;
+}
+
+/* About Page */
+.about-page {
+    padding: 50px;
+}
+
+.about-page h2 {
+    color: #333;
+}
+
+.about-page img {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Hobbies Page */
+.hobbies-page {
+    padding: 50px;
+}
+
+.hobbies-page h2 {
+    color: #333;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
