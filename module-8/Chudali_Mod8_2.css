@@ -1,0 +1,99 @@
+header {
+    background-color: #3498db; /* Blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+#navbar {
+    overflow: hidden;
+    background-color: #2c3e50; /* Dark Grayish Blue */
+    border-bottom: solid 15px #e74c3c; /* Red */
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #e74c3c; /* Red */
+    color: white;
+}
+.container{
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    color: #2c3e50; /* Dark Grayish Blue */
+    font-weight: 400;
+}
+.card-content{
+    padding: 2px 16px;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+footer {
+    background-color: #3498db; /* Blue */
+    position: fixed;
+    left: 0;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    font-weight: 400;
+    float: right;
+    padding-right: 10px;
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+#movies {
+    border-collapse: collapse; /* Set the border-collapse to collapse */
+    width: 100%; /* Set the width to 100% */
+    margin-bottom: 30px; /* Set the bottom margin to 30px */
+}
+
+#movies th {
+    padding-top: 12px; /* Set the top padding to 12px */
+    padding-bottom: 12px; /* Set the bottom padding to 12px */
+    text-align: left; /* Align the text to the left */
+}
+
+#movies td {
+    border: 1px solid #ddd; /* Set the border to 1px solid with a color of #ddd */
+    padding: 8px; /* Set the padding to 8px */
+}
+
+
+.container {
+    margin: 2% 5% 5% 5%; /* Use shorthand to set the margin */
+    padding: 10px;
+}
