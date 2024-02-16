@@ -1,0 +1,68 @@
+html, body {
+    font-size: 16px;
+}
+
+p {
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 500;
+    text-align: left;
+    padding-top: 15px;
+}
+
+address {
+    text-align: center;
+}
+
+a {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #4F3674;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: #D6A800;
+}
+
+
+.sentence {
+    font-style: italic;
+}
+
+.intro {
+    text-indent: 2em;
+}
+footer {
+    background-color: #3498db; /* Blue */
+    position: fixed;
+    left: 0;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    font-weight: 400;
+    float: right;
+    padding-right: 10px;
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
