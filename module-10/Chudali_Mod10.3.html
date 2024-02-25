@@ -1,0 +1,63 @@
+<!-- Tej Chudali : Assingment 10.3 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tej Chudali">
+  <title>CSD 340 Web Development with HTML and CSS</title>
+
+  <!-- Link to the external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="Chudali_Mod10.3.css" />
+
+  <script>
+    function displayImage(imageFile) {
+      var largerImage = document.getElementById("mainImage");
+      var newNode = document.createElement("img");
+      newNode.id = "mainImage";
+      newNode.src = imageFile;
+      newNode.alt = "Large Image";
+      newNode.className = "mainImage";
+      // Set fixed width and height for the images directly on the HTML
+      newNode.style.width = "300px";
+      newNode.style.height = "200px";
+      largerImage.parentNode.replaceChild(newNode, largerImage);
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Assignment 10.3: JavaScript - Part 2</h1>
+
+  
+  <br />
+  <div>
+    <a href="#" onmouseover="tiger.src='Img1.jpg';" onmouseout="tiger.src='Img1negative.jpg';">
+      <img border="0" name="tiger" src="Img1negative.jpg" style="width: 300px; height: 200px;">
+    </a>
+  </div>
+  <br />
+  <div onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">
+    Run your mouse over the image to change.
+    <br />
+  </div>
+  <div>
+    <a href="#" onmouseover="seen.src='Img3.jpg';" onmouseout="seen.src='Img3negative.jpg';">
+      <img border="0" name="seen" src="Img3negative.jpg" style="width: 300px; height: 200px;">
+    </a>
+  </div>
+  <br />
+  <div onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">
+    Run your mouse over the image to change.
+    <br />
+    Right-click and select View Source for more details.
+  </div>
+  <footer>
+    <p>&copy; 2024 Chudali</p>
+    <p><a href="../index.html">Back to Portal Page</a></p>
+</footer>
+
+</body>
+
+</html>
