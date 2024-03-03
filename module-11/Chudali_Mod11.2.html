@@ -1,0 +1,79 @@
+<!-- Tej Chudali : Assingment 11.2 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tej Chudali">
+  <title>CSD 340 Web Development with HTML and CSS</title>
+  <style>
+    #taskList {
+        margin-top: 10px;
+    }
+    #footer{
+        margin-top: 300px;
+    }
+</style>
+</head>
+
+<body>
+<h1>Assignment 11.2: JavaScript - Part 3</h1>
+
+<label for="taskInput">Enter Task:</label>
+<input type="text" id="taskInput">
+<button onclick="addTask()">Add</button>
+<button onclick="deleteLastEntry()">Delete Last Entry</button>
+<button onclick="displayTasks()">Display</button>
+
+<hr>
+
+<div id="taskList"></div>
+
+
+<script>
+    // JavaScript Section
+    let tasks = [];
+    const taskListContainer = document.getElementById('taskList');
+
+    function addTask() {
+        const taskInput = document.getElementById('taskInput').value;
+        if (taskInput.trim() !== '') {
+            tasks.push(taskInput);
+            alert(`Task added: ${taskInput}`);
+            document.getElementById('taskInput').value = ''; // Clear the input
+        } else {
+            alert('Please enter a valid task.');
+        }
+    }
+
+    function deleteLastEntry() {
+        if (tasks.length > 0) {
+            const deletedTask = tasks.pop();
+            alert(`Task deleted: ${deletedTask}`);
+        } else {
+            alert('Task list is empty.');
+        }
+    }
+
+    function displayTasks() {
+        if (tasks.length > 0) {
+            let displayMessage = '<strong>Tasks:</strong><br>';
+            for (let i = 0; i < tasks.length; i++) {
+                displayMessage += `<p>${i + 1}. ${tasks[i]}</p>`;
+            }
+            taskListContainer.innerHTML = displayMessage;
+        } else {
+            taskListContainer.innerHTML = '<p>Task list is empty.</p>';
+        }
+    }
+</script>
+<br>
+
+<footer id="footer">
+    <p>&copy; 2024 Chudali</p>
+    <p><a href="../index.html">Back to Portal Page</a></p>
+</footer>
+</body>
+
+</html>
