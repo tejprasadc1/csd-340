@@ -8,7 +8,27 @@
     <meta name="author" content="Tej Chudali">
     <meta name="description" content="Assignment 12.2 - JavaScript Exercise, Part 4">
     <meta name="keywords" content="CSD 340, HTML, CSS, web development">
-    <link rel="stylesheet" href="/module-12/Chudali_Mod12_2.css">
+    <link rel="stylesheet" href="/module-12/Chudali_Mod12_2.css"> 
+
+    
+    <style>
+        /* Some how gitHub  not loading Css file */
+        
+        .side-by-side-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .side-by-side {
+            flex: 1; /* Each side-by-side div takes up equal width */
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            text-align: left; /* Center the buttons */
+            margin-top: 10px; /* Adjust margin for spacing */
+        }
+    </style>
     <title>CSD 340 Web Development with HTML and CSS</title>
 </head>
 
@@ -20,7 +40,7 @@
             <div class="side-by-side">
                 <ol id="bookList" class="border-list">
                     <h3>Top 10 Favorite Books</h3>
-
+                    
                     <script>
                         const topTenBooks = [
                             "Anna Karenina by Leo Tolstoy",
