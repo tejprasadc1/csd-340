@@ -1,0 +1,57 @@
+/* Styles for flex container */
+.side-by-side-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+/* Styles for h1 title */
+.center-text {
+    text-align: center;
+    width: 100%; /* Make sure the title spans the full width */
+}
+
+/* Styles for side-by-side divs */
+.side-by-side {
+    width: 45%;
+    margin-bottom: 20px; /* Add some space between the divs */
+}
+
+/* Styles for last div */
+.full-width {
+    width: 100%;
+    margin-top: 20px; /* Adjust margin for visual separation */
+}
+
+/* Float right */
+.float-right {
+    float: right;
+}
+
+/* Styles for h3 tags */
+.div-title {
+    font-weight: 500;
+}
+
+/* Styles for ordered and unordered lists */
+.border-list {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style: inside;
+}
+
+.full-width {
+    width: 100%;
+    display: flex; 
+    justify-content: flex-end; 
+}
+
+/* Styles for links */
+.link:hover {
+    text-decoration: underline;
+}
+.button-container {
+    text-align: left; 
+    margin-top: 10px;
+}
