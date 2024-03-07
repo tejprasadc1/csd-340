@@ -1,4 +1,4 @@
-/* Styles for flex container */
+
 .side-by-side-container {
     display: flex;
     justify-content: space-between;
@@ -8,8 +8,8 @@
 /* Styles for h1 title */
 .center-text {
     text-align: center;
-    width: 100%; /* Make sure the title spans the full width */
-}
+    width: 100%;
+} 
 
 /* Styles for side-by-side divs */
 .side-by-side {
