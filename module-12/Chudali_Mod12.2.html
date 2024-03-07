@@ -8,27 +8,68 @@
     <meta name="author" content="Tej Chudali">
     <meta name="description" content="Assignment 12.2 - JavaScript Exercise, Part 4">
     <meta name="keywords" content="CSD 340, HTML, CSS, web development">
-    <link rel="stylesheet" href="/module-12/Chudali_Mod12_2.css"> 
+    <link rel="stylesheet" href="/module-12/Chudali_Mod12_2.css">
 
-    
+
     <style>
-        /* Some how gitHub  not loading Css file */
-        
+        /* Some how gitHub  not loading my Css file */
+
         .side-by-side-container {
-            display: flex;
-            flex-wrap: wrap;
-        }
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
 
-        .side-by-side {
-            flex: 1; /* Each side-by-side div takes up equal width */
-            margin-bottom: 20px;
-        }
+/* Styles for h1 title */
+.center-text {
+    text-align: center;
+    width: 100%;
+} 
 
-        .button-container {
-            text-align: left; /* Center the buttons */
-            margin-top: 10px; /* Adjust margin for spacing */
-        }
-    </style>
+/* Styles for side-by-side divs */
+.side-by-side {
+    width: 45%;
+    margin-bottom: 20px; /* Add some space between the divs */
+}
+
+/* Styles for last div */
+.full-width {
+    width: 100%;
+    margin-top: 20px; /* Adjust margin for visual separation */
+}
+
+/* Float right */
+.float-right {
+    float: right;
+}
+
+/* Styles for h3 tags */
+.div-title {
+    font-weight: 500;
+}
+
+/* Styles for ordered and unordered lists */
+.border-list {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style: inside;
+}
+
+.full-width {
+    width: 100%;
+    display: flex; 
+    justify-content: flex-end; 
+}
+
+/* Styles for links */
+.link:hover {
+    text-decoration: underline;
+}
+.button-container {
+    text-align: left; 
+    margin-top: 10px;
+}    </style>
     <title>CSD 340 Web Development with HTML and CSS</title>
 </head>
 
@@ -40,7 +81,7 @@
             <div class="side-by-side">
                 <ol id="bookList" class="border-list">
                     <h3>Top 10 Favorite Books</h3>
-                    
+
                     <script>
                         const topTenBooks = [
                             "Anna Karenina by Leo Tolstoy",
