@@ -40,13 +40,18 @@
     padding: 10px;
     list-style: inside;
 }
+
 .full-width {
     width: 100%;
-    display: flex; /* Enable flexbox */
-    justify-content: flex-end; /* Align content to the right */
+    display: flex; 
+    justify-content: flex-end; 
 }
 
 /* Styles for links */
 .link:hover {
     text-decoration: underline;
+}
+.button-container {
+    text-align: left; 
+    margin-top: 10px;
 }

@@ -1,0 +1,81 @@
+<!-- Tej Chudali : Assignment 12.2 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tej Chudali">
+    <meta name="description" content="Assignment 12.2 - JavaScript Exercise, Part 4">
+    <meta name="keywords" content="CSD 340, HTML, CSS, web development">
+    <link rel="stylesheet" href="/module-3/Chudali_Mod3_3.css"> 
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1 class="center-text">Assignment 12.2: JavaScript - Part 4</h1>
+
+        <div class="side-by-side-container">
+            <div class="side-by-side">
+                <ol id="bookList" class="border-list">
+                    <h3>Top 10 Favorite Books</h3>
+                    
+                    <script>
+                        const topTenBooks = [
+                            "Anna Karenina by Leo Tolstoy",
+                            "Madame Bovary by Gustave Flaubert",
+                            "War and Peace by Leo Tolstoy",
+                            "The Great Gatsby by F. Scott Fitzgerald",
+                            "Lolita by Vladimir Nabokov",
+                            "Middlemarch by George Eliot",
+                            "The Adventures of Huckleberry Finn by Mark Twain",
+                            "The Stories of Anton Chekhov by Anton Chekhov",
+                            "In Search of Lost Time by Marcel Proust",
+                            "Hamlet by William Shakespeare"
+                        ];
+
+                        // Function to display array elements in ascending order
+                        function displayTopToBottom() {
+                            topTenBooks.sort();
+                            document.getElementById('bookList').innerHTML = "<h3>Top 10 Favorite Books (Top to Bottom)</h3>" +
+                                "<ol start='1'><li>" + topTenBooks.join("</li><li>") + "</li></ol>";
+                        }
+
+                        // Function to display array elements in descending order
+                        function displayBottomToTop() {
+                            topTenBooks.sort().reverse();
+                            document.getElementById('bookList').innerHTML = "<h3>Top 10 Favorite Books (Bottom to Top)</h3>" +
+                                "<ol start='1'><li>" + topTenBooks.join("</li><li>") + "</li></ol>";
+                        }
+
+                        // Execute one of the functions by default (e.g., displayTopToBottom)
+                        displayTopToBottom();
+                    </script>
+                </ol>
+            </div>
+
+            <div class="side-by-side">
+                <ul class="border-list">
+                    <h3>5 Things I’ve Learned Since the Course Started</h3>
+                    <li>PERIPHERAL VISION IS USED MORE THAN CENTRAL VISION TO GET THE GIST OF WHAT YOU SEE</li>
+                    <li>PEOPLE IDENTIFY OBJECTS BY RECOGNIZING PATTERNS</li>
+                    <li>THERE’S A SPECIAL PART OF THE BRAIN JUST FOR RECOGNIZING FACES</li>
+                    <li>PEOPLE IMAGINE OBJECTS TILTED AND AT A SLIGHT ANGLE ABOVE</li>
+                    <li>RED AND BLUE TOGETHER ARE HARD ON THE EYES</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button type="button" onclick="displayTopToBottom()">Top to Bottom</button>
+            <button type="button" onclick="displayBottomToTop()">Bottom to Top</button>
+        </div>
+
+        <div class="full-width">
+            <a href="../index.html" class="link">Back to Index</a>
+        </div>
+    </div>
+</body>
+
+</html>
